@@ -23,6 +23,14 @@ module.exports.counter = counter;
 module.exports.adder = adder;
 module.exports.PI = PI;
 
+or 
+
+module.exports = {
+    counter : counter;
+    adder : adder;
+    PI : PI;
+}
+
 */    //    or
 
 module.exports.counter = function(arr) {
