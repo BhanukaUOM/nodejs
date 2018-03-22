@@ -11,7 +11,7 @@ var server = http.createServer(function(req, res){
 */
 
 
-/* JSON */
+/* JSON 
 var server = http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type' : 'application/json'});
     var obj = {
@@ -20,5 +20,21 @@ var server = http.createServer(function(req, res){
     };
     res.end(JSON.stringify(obj));
 });
+*/
 
+
+/* routing */
+var server = http.createServer(function(req, res){
+    var url = req.url;
+    if(url === '/home' || url == '/'){
+        res.writeHead(200, {'Content-Type' : 'text/html'});
+        var readStream = fs.createReadStream('./module.js').pipe(res);
+    } else if(url === '/contact'){
+        res.writeHead(200, {'Content-Type' : 'text/html'});
+        var readStream = fs.createReadStream('./3. modules.js').pipe(res);
+    } else {
+        res.writeHead(404, {'Content-Type' : 'text/html'});
+        res.end("Not Found! 404");
+    }
+});
 server.listen(3000, '127.0.0.1');
