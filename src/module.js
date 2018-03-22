@@ -15,7 +15,7 @@ var counter = function(arr) {
 
 var adder = function(a, b){
     return a+b;
-}
+};
 
 var PI = 3.14;
 
@@ -29,16 +29,16 @@ module.exports = {
     counter : counter;
     adder : adder;
     PI : PI;
-}
+};
 
 */     //    or
 
 module.exports.counter = function(arr) {
     return `Array Length is ${arr.length}`;
-}
+};
 
 module.exports.adder = function(a, b){
     return a+b;
-}
+};
 
 module.exports.PI = 3.14;
