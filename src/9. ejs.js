@@ -12,7 +12,7 @@ app.get('/admin', function(req, res){
 });
 
 app.get('/id/:id', function(req, res){
-    var object = {'name' : 'name', 'age' : 23};
+    var object = {'name' : 'name', 'age' : [23,24,25,26,10]};
     res.render('person', {id : req.params.id, obj : object});
 });
 

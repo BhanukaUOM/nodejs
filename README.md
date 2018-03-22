@@ -8,3 +8,4 @@
 6. Stream Files: R/W, Pipe
 7. Use Pipe to set server: Text and HTML, Json, Routing
 8. Express.js: Routing, params
+9. Template Engine: Ejs

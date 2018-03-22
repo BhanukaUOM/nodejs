@@ -5,6 +5,12 @@
 <body>
     <h1>Hello</h1>
     <p>Welcome <%=id%></p>
-    <p>Object = <%=obj.name%> <%=obj.age%></p>
+    <p>Object = <%=obj.name%></p>
+
+    <ul>
+        <% obj.age.forEach(function(item){ %>
+            <li><%=item%></li>
+        <% }); %>
+    </ul>
 </body>
 </html>
