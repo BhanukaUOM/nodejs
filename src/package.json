@@ -1,0 +1,27 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "node js basic",
+  "main": "1. globalObjects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhanukaUOM/nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "tutorials",
+    "basic"
+  ],
+  "author": "Bhanuka Rathnayaka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BhanukaUOM/nodejs/issues"
+  },
+  "homepage": "https://github.com/BhanukaUOM/nodejs#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
