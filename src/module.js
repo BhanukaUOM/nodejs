@@ -31,7 +31,7 @@ module.exports = {
     PI : PI;
 }
 
-*/    //    or
+*/     //    or
 
 module.exports.counter = function(arr) {
     return `Array Length is ${arr.length}`;
