@@ -13,6 +13,7 @@ app.use('/id', function(req, res, next){
 app.use('/id', express.static('views'));  //http://localhost:3000/id/person.ejs = ./views/person.ejs
 
 app.get('/', function(req, res){
+    console.log(req.query); //url/?xxxxxxx
     res.send("Home Page");
 });
 
