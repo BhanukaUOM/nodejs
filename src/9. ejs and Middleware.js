@@ -10,7 +10,7 @@ app.use('/id', function(req, res, next){
 */
 
 /* static files */
-app.use('/views', express.static('views'));
+app.use('/id', express.static('views'));  //http://localhost:3000/id/person.ejs = ./views/person.ejs
 
 app.get('/', function(req, res){
     res.send("Home Page");
